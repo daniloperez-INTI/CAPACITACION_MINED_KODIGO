@@ -1,0 +1,140 @@
+/* Paleta de colores inspirada en tecnología y seguridad */
+:root {
+    --dark-blue: #0b132b;
+    --navy: #1c2541;
+    --accent-cyan: #5bc0be;
+    --white: #ffffff;
+    --light-gray: #f0f4f8;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    color: #333;
+    background-color: var(--light-gray);
+}
+
+/* Header */
+header {
+    background: var(--dark-blue);
+    color: var(--accent-cyan);
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid var(--accent-cyan);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Navegación */
+nav {
+    background: var(--navy);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 1.2rem 2rem;
+    display: block;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: var(--accent-cyan);
+    color: var(--dark-blue);
+}
+
+/* Main */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    background: var(--white);
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: var(--navy);
+    margin-top: 0;
+    border-left: 5px solid var(--accent-cyan);
+    padding-left: 15px;
+}
+
+h3 {
+    color: var(--dark-blue);
+    margin-bottom: 0.5rem;
+}
+
+/* Formulario Estilizado */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--accent-cyan);
+}
+
+button {
+    background: var(--navy);
+    color: var(--accent-cyan);
+    padding: 1rem;
+    border: 2px solid var(--accent-cyan);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: var(--accent-cyan);
+    color: var(--dark-blue);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--dark-blue);
+    color: var(--white);
+    font-size: 0.9rem;
+}

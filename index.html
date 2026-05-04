@@ -1,13 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Escudotecnológico - Expertos en Ciberseguridad</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Introducción a Git</h2>
-    <h3>¿Qué es Git?</h3>
-    <p>Git es un sistema de control de versiones distribuido que permite a los desarrolladores rastrear los cambios en su código fuente a lo largo del tiempo. Fue creado por Linus Torvalds en 2005 para ayudar en el desarrollo del kernel de Linux.</p>
+
+    <header>
+        <h1>Escudotecnológico</h1>
+        <p>Protegiendo tus activos digitales en un mundo interconectado</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#amenazas">Amenazas</a></li>
+            <li><a href="#contacto">Soporte</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>La importancia de la Ciberseguridad</h2>
+            <p>En la era digital, la ciberseguridad no es un lujo, es una necesidad. Se encarga de proteger sistemas, redes y programas de ataques digitales que buscan acceder, cambiar o destruir información sensible.</p>
+        </section>
+
+        <section id="amenazas">
+            <h2>Amenazas Críticas</h2>
+            <article>
+                <h3>Ransomware</h3>
+                <p>Un software malicioso que cifra tus archivos y exige un rescate económico para devolverte el acceso.</p>
+            </article>
+            <article>
+                <h3>Phishing</h3>
+                <p>Técnica de ingeniería social que consiste en el envío de correos fraudulentos para robar credenciales bancarias o contraseñas.</p>
+            </article>
+            <article>
+                <h3>Ataques DDoS</h3>
+                <p>Intento de agotar los recursos de una red o servidor para que sus usuarios legítimos no puedan acceder a él.</p>
+            </article>
+        </section>
+
+        <section id="contacto">
+            <h2>Solicitar Auditoría de Seguridad</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre del Responsable:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo Corporativo:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="servicio">Servicio de Interés:</label>
+                    <select id="servicio" name="servicio">
+                        <option value="pentesting">Pruebas de Penetración</option>
+                        <option value="analisis">Análisis de Vulnerabilidades</option>
+                        <option value="capacitacion">Capacitación de Personal</option>
+                    </select>
+                </div>
+
+                <button type="submit">Contactar con un Especialista</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Escudotecnológico - Centro de Respuesta a Incidentes (CERT)</p>
+    </footer>
+
 </body>
-</html>git 
+</html>
